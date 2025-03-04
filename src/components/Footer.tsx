@@ -1,6 +1,6 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-
+import img from '../img/Next-gen.png'; 
 const Footer = () => {
   return (
     <footer className="bg-dark-lighter text-gray-300 border-t border-dark-medium">
@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center">
-              <img 
-                src="https://i.imgur.com/YQjkBdM.png" 
-                alt="NextGen Malitech Logo" 
-                className="h-10 w-auto"
+            <img
+                src={img}
+                alt="NextGen Malitech Logo"
+                className="h-24 w-auto" // Taille augmentée
               />
               <div className="ml-2">
                 <span className="text-xl font-bold text-secondary">NEXTGEN</span>
